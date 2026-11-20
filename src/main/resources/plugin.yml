@@ -1,0 +1,28 @@
+name: VortyClan
+version: ${project.version}
+main: me.vorty.vortyclan.VortyClan
+api-version: '1.20'
+folia-supported: true
+authors: [Vorty]
+description: Plugin clan dengan GUI sendiri untuk Paper, Purpur, Spigot, dan Folia.
+softdepend: [PlaceholderAPI]
+
+commands:
+  clan:
+    description: Perintah utama VortyClan
+    usage: /clan help
+    aliases: [clans, vclan]
+
+permissions:
+  vortyclan.use:
+    description: Boleh memakai perintah /clan
+    default: true
+  vortyclan.create:
+    description: Boleh membuat clan
+    default: true
+  vortyclan.bypass.delay:
+    description: Teleport home clan tanpa delay
+    default: op
+  vortyclan.admin:
+    description: Perintah admin (reload, bubarkan clan lain)
+    default: op

@@ -1,0 +1,294 @@
+# VortyClan - English
+prefix: "&8[&bVortyClan&8] &7"
+
+no-permission: "&cYou don't have permission to do that."
+player-only: "&cOnly players can use this command."
+unknown-sub: "&cUnknown subcommand. Type &f/clan help&c."
+usage: "&cUsage: &f{usage}"
+not-in-clan: "&cYou are not in a clan."
+already-in-clan: "&cYou are already in a clan."
+need-role: "&cYou need at least the {role} &crank to do that."
+clan-not-found: "&cClan &f{name} &cwas not found."
+player-offline: "&cPlayer &f{player} &cis not online."
+player-unknown: "&cUnknown player &f{player}&c."
+not-member: "&cPlayer &f{player} &cis not in your clan."
+cannot-target: "&cYour rank is not high enough to do that to this player."
+cannot-target-self: "&cYou can't do that to yourself."
+
+name-length: "&cClan name must be {min_name}-{max_name} characters."
+name-invalid: "&cClan name may only contain letters, numbers and underscores."
+name-blocked: "&cThat clan name is not allowed."
+name-taken: "&cThat name is already used by another clan."
+tag-length: "&cClan tag must be {min_tag}-{max_tag} characters."
+tag-invalid: "&cClan tag may only contain letters and numbers."
+tag-taken: "&cThat tag is already used by another clan."
+create-success: "&aClan &f{clan} &awas created! Type &f/clan &ato open the menu."
+
+disband-confirm: "&eType &f/clan disband confirm &eto permanently disband your clan."
+disbanded: "&cClan &f{clan} &cwas disbanded by &f{player}&c."
+admin-disbanded: "&aClan &f{clan} &awas disbanded."
+
+invite-sent: "&aInvitation sent to &f{player}&a."
+invite-received: "&aYou were invited to clan &f{clan} &aby &f{player}&a. Type &f/clan accept {clan} &ato join (valid for {invite_expire}s)."
+invite-self: "&cYou can't invite yourself."
+invite-already: "&cThat player already has a pending invitation."
+target-in-clan: "&cThat player is already in a clan."
+target-banned: "&cThat player is banned from your clan."
+clan-full: "&cThe clan is full (max {max_members} members)."
+invite-none: "&cYou have no clan invitations."
+invite-choose: "&eYou have several invitations: &f{clans}&e. Pick one with &f/clan accept <clan>&e."
+no-invite: "&cYou have no invitation from clan &f{clan}&c."
+invite-denied: "&7Invitation from clan &f{clan} &7declined."
+
+join-success: "&aYou joined clan &f{clan}&a!"
+join-broadcast: "&f{player} &ajoined the clan."
+join-closed: "&cThis clan is closed. You need an invitation."
+banned-from-clan: "&cYou are banned from this clan."
+leave-success: "&7You left clan &f{clan}&7."
+leave-broadcast: "&f{player} &cleft the clan."
+owner-cannot-leave: "&cThe owner can't leave. Use &f/clan transfer &cor disband the clan."
+
+kick-success: "&f{player} &awas kicked from the clan."
+kicked: "&cYou were kicked from clan &f{clan} &cby &f{player}&c."
+kick-broadcast: "&f{player} &cwas kicked by &f{by}&c."
+role-changed: "&f{player} &7is now {role}&7."
+promote-max: "&cThat player already has the highest rank you can give."
+demote-min: "&cThat player can't be demoted any further."
+transfer-broadcast: "&6{player} &7is now the clan owner."
+ban-success: "&f{player} &awas banned from the clan."
+unban-success: "&f{player} &ais no longer banned."
+not-banned: "&cThat player is not banned."
+
+sethome-success: "&aClan home set at your location."
+home-none: "&cYour clan has no home yet."
+home-world-missing: "&cThe clan home world could not be found."
+home-warmup: "&eTeleporting in {seconds}s... don't move!"
+home-cancelled: "&cTeleport cancelled because you moved."
+home-teleported: "&aTeleported to the clan home."
+
+rename-success: "&aClan renamed to &f{clan}&a."
+tag-success: "&aClan tag changed to &f{tag}&a."
+desc-success: "&aClan description updated."
+desc-too-long: "&cDescription can be at most {max_desc} characters."
+color-success: "&aClan color changed."
+color-invalid: "&cInvalid color. Use a code (0-9, a-f) or a color name."
+open-set: "&7Clan status is now: {state}"
+ff-set: "&7Friendly fire is now: {state}"
+chat-on: "&aClan chat &2enabled&a. Your messages are only seen by clan members."
+chat-off: "&7Clan chat disabled."
+ff-blocked: "&cYou can't attack your clan mates."
+score-gain: "&a+{points} score for your clan."
+reload-success: "&aVortyClan configuration reloaded."
+
+prompt:
+  create: "&eType the clan name (and optional tag) in chat. Example: &fDragons DRG"
+  invite: "&eType the name of the player you want to invite."
+  rename: "&eType the new clan name."
+  tag: "&eType the new clan tag."
+  desc: "&eType the new clan description (type - to clear)."
+  cancel-hint: "&7Type &fcancel &7to abort."
+  cancelled: "&7Cancelled."
+
+role:
+  member: "&7Member"
+  admin: "&eAdmin"
+  owner: "&6Owner"
+state:
+  on: "&aOn"
+  off: "&cOff"
+status:
+  open: "&aOpen"
+  closed: "&cClosed"
+
+info:
+  - "&8&m          &r {color}&l{clan} &8[{color}{tag}&8] &8&m          "
+  - "&7Owner: &f{owner}"
+  - "&7Members: &f{members}&7/&f{max} &8(&a{online} online&8)"
+  - "&7Score: &e{score} &8(rank #{rank})"
+  - "&7Status: {status} &8| &7Friendly fire: {ff}"
+  - "&7Created: &f{created}"
+  - "&7Description: &f{desc}"
+
+list-header: "&8&m      &r &b&lTop Clans &7(Page {page}/{pages}) &8&m      "
+list-entry: "&7#{rank} {color}{clan} &8[{color}{tag}&8] &7- &f{members} members &7- &e{score} score &7- {status}"
+list-empty: "&7There are no clans yet."
+
+help:
+  - "&8&m        &r &b&lVortyClan &7- Help &8&m        "
+  - "&f/clan &7- open the GUI menu"
+  - "&f/clan create <name> [tag] &7- create a clan"
+  - "&f/clan info [clan] &7- clan info"
+  - "&f/clan list [page] &7- clan list & ranking"
+  - "&f/clan invite <player> &7- invite a player"
+  - "&f/clan accept|deny [clan] &7- accept/decline an invite"
+  - "&f/clan join <clan> &7- join an open clan"
+  - "&f/clan leave &7- leave your clan"
+  - "&f/clan kick|ban|unban <player> &7- manage members"
+  - "&f/clan promote|demote|transfer <player> &7- change ranks"
+  - "&f/clan home &7| &f/clan sethome &7- clan home"
+  - "&f/clan open|close &7- open/close joining"
+  - "&f/clan pvp &7- toggle friendly fire"
+  - "&f/clan chat [message] &7- clan chat"
+  - "&f/clan rename|tag|desc|color &7- change clan look"
+  - "&f/clan disband &7- disband your clan"
+
+gui:
+  back: "&c« Back"
+  prev: "&e« Previous page"
+  next: "&eNext page »"
+  main:
+    title: "&8VortyClan &7• Menu"
+    info-name: "{color}{clan} &8[{color}{tag}&8]"
+    info-lore:
+      - "&7Owner: &f{owner}"
+      - "&7Members: &f{members}&7/&f{max} &8(&a{online} online&8)"
+      - "&7Score: &e{score} &8(#{rank})"
+      - "&7Status: {status}"
+      - "&7Friendly fire: {ff}"
+      - ""
+      - "&7{desc}"
+    members-name: "&bMembers"
+    members-lore:
+      - "&7View and manage clan members."
+      - ""
+      - "&eClick to open"
+    home-name: "&aClan Home"
+    home-lore:
+      - "&7Teleport to the clan home."
+      - ""
+      - "&eClick to teleport"
+    top-name: "&6Top Clans"
+    top-lore:
+      - "&7Clan ranking by score."
+      - ""
+      - "&eClick to view"
+    invite-name: "&aInvite Player"
+    invite-lore:
+      - "&7Invite a player to your clan."
+      - ""
+      - "&eClick, then type the player name"
+    settings-name: "&dClan Settings"
+    settings-lore:
+      - "&7Manage status, friendly fire, home,"
+      - "&7description, name, tag and color."
+      - ""
+      - "&eClick to open"
+    chat-name: "&9Clan Chat: {state}"
+    chat-lore:
+      - "&7When on, all your messages are only"
+      - "&7visible to clan members."
+      - ""
+      - "&eClick to toggle"
+    leave-name: "&cLeave Clan"
+    leave-lore:
+      - "&7Leave your clan."
+    leave-confirm: "&eReally leave the clan?"
+    disband-name: "&4Disband Clan"
+    disband-lore:
+      - "&7Permanently delete the clan."
+    disband-confirm: "&cReally disband the clan? This is permanent!"
+    create-name: "&aCreate Clan"
+    create-lore:
+      - "&7You don't have a clan yet."
+      - ""
+      - "&eClick, then type the clan name in chat"
+    invites-name: "&eInvitations &7({count})"
+    invites-lore:
+      - "&7View clan invitations for you."
+      - ""
+      - "&eClick to open"
+    top-browse-name: "&6Browse Clans"
+    top-browse-lore:
+      - "&7Look at other clans and join open ones."
+      - ""
+      - "&eClick to open"
+  members:
+    title: "&8VortyClan &7• Members"
+    entry-name: "&f{player}"
+    entry-lore:
+      - "&7Rank: {role}"
+      - "&7Status: {state}"
+    online: "&aOnline"
+    offline: "&7Offline"
+    manage-hint: "&eClick to manage"
+  member:
+    title: "&8Manage &7{player}"
+    promote-name: "&aPromote"
+    promote-lore:
+      - "&7Make this player an admin."
+    demote-name: "&6Demote"
+    demote-lore:
+      - "&7Make this player a regular member."
+    kick-name: "&cKick"
+    kick-lore:
+      - "&7Remove from the clan."
+    kick-confirm: "&eKick {player} from the clan?"
+    ban-name: "&4Ban"
+    ban-lore:
+      - "&7Kick and block from joining again."
+    ban-confirm: "&eBan {player} from the clan?"
+    transfer-name: "&6Transfer Ownership"
+    transfer-lore:
+      - "&7Make this player the clan owner."
+      - "&7You will become an admin."
+    transfer-confirm: "&cTransfer ownership to {player}?"
+  settings:
+    title: "&8VortyClan &7• Settings"
+    open-name: "&eJoin Status: {state}"
+    open-lore:
+      - "&7Open clans can be joined by anyone."
+      - ""
+      - "&eClick to toggle"
+    ff-name: "&cFriendly Fire: {state}"
+    ff-lore:
+      - "&7Allow members to hurt each other."
+      - ""
+      - "&eClick to toggle"
+    home-name: "&aSet Home"
+    home-lore:
+      - "&7Use your current location as the clan home."
+      - ""
+      - "&eClick to set"
+    desc-name: "&bChange Description"
+    desc-lore:
+      - "&7Click, then type the new description."
+    rename-name: "&dChange Name"
+    rename-lore:
+      - "&7Owner only. Click, then type the new name."
+    tag-name: "&dChange Tag"
+    tag-lore:
+      - "&7Owner only. Click, then type the new tag."
+    color-name: "&dChange Color"
+    color-lore:
+      - "&7Owner only. Pick the clan color."
+  color:
+    title: "&8VortyClan &7• Color"
+    names: [Black, Dark Blue, Dark Green, Dark Aqua, Dark Red, Purple, Gold, Light Gray, Dark Gray, Blue, Green, Aqua, Red, Pink, Yellow, White]
+    pick: "&eClick to pick"
+  top:
+    title: "&8VortyClan &7• Top Clans"
+    entry-name: "&e#{rank} {color}{clan} &8[{color}{tag}&8]"
+    entry-lore:
+      - "&7Owner: &f{owner}"
+      - "&7Members: &f{members}&7/&f{max}"
+      - "&7Score: &e{score}"
+      - "&7Status: {status}"
+      - "&7{desc}"
+    join-hint: "&aClick to join"
+  invites:
+    title: "&8VortyClan &7• Invitations"
+    entry-name: "{color}{clan} &8[{color}{tag}&8]"
+    entry-lore:
+      - "&7Owner: &f{owner}"
+      - "&7Members: &f{members}&7/&f{max}"
+      - ""
+      - "&aLeft click: accept"
+      - "&cRight click: decline"
+  confirm:
+    title: "&8Confirm"
+    yes: "&aYes, continue"
+    yes-lore:
+      - "&7Click to confirm."
+    no: "&cCancel"
+    no-lore:
+      - "&7Click to cancel."

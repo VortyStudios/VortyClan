@@ -1,0 +1,52 @@
+# ============================================================
+#  VortyClan - konfigurasi utama
+# ============================================================
+
+# Bahasa pesan & GUI: id (Indonesia) atau en (English).
+# File bahasa ada di folder plugins/VortyClan/lang/
+language: id
+
+clan:
+  max-members: 20
+  name:
+    min-length: 3
+    max-length: 16
+    regex: "^[A-Za-z0-9_]+$"
+    # Nama yang mengandung kata-kata ini ditolak
+    blocked: [admin, staff, moderator, owner, server]
+  tag:
+    min-length: 2
+    max-length: 5
+    regex: "^[A-Za-z0-9]+$"
+  description-max-length: 64
+  invite-expire-seconds: 60
+
+home:
+  # Delay teleport ke home clan (detik). 0 = langsung.
+  # Pemain dengan permission vortyclan.bypass.delay tidak kena delay.
+  delay-seconds: 3
+
+score:
+  # Skor clan saat anggotanya membunuh pemain dari clan lain
+  kill: 1
+  # Skor yang hilang saat anggota clan dibunuh pemain clan lain
+  death: 0
+
+chat:
+  # Tampilkan tag clan di depan chat publik
+  public-tag: true
+  public-tag-format: "&8[{color}{tag}&8] &r"
+  # Format chat clan. Placeholder: {color} {symbol} {player} {clan} {tag} {message}
+  clan-format: "&8[&bClan&8] {color}{symbol}{player}&8: &f{message}"
+  log-to-console: true
+  symbols:
+    owner: "&6**"
+    admin: "&e*"
+    member: ""
+
+# Berapa lama (detik) menunggu input chat saat GUI meminta pemain mengetik sesuatu
+prompt-timeout-seconds: 30
+
+placeholders:
+  # Teks yang dikembalikan placeholder teks bila pemain tidak punya clan
+  no-clan: ""

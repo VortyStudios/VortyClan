@@ -1,0 +1,294 @@
+# VortyClan - Bahasa Indonesia
+prefix: "&8[&bVortyClan&8] &7"
+
+no-permission: "&cKamu tidak punya izin untuk itu."
+player-only: "&cPerintah ini hanya bisa dipakai oleh pemain."
+unknown-sub: "&cSub-perintah tidak dikenal. Ketik &f/clan help&c."
+usage: "&cPenggunaan: &f{usage}"
+not-in-clan: "&cKamu belum punya clan."
+already-in-clan: "&cKamu sudah berada di dalam sebuah clan."
+need-role: "&cKamu harus berpangkat minimal {role} &cuntuk melakukan itu."
+clan-not-found: "&cClan &f{name} &ctidak ditemukan."
+player-offline: "&cPemain &f{player} &csedang tidak online."
+player-unknown: "&cPemain &f{player} &ctidak dikenal."
+not-member: "&cPemain &f{player} &cbukan anggota clan kamu."
+cannot-target: "&cPangkatmu tidak cukup untuk melakukan itu pada pemain tersebut."
+cannot-target-self: "&cKamu tidak bisa melakukan itu pada dirimu sendiri."
+
+name-length: "&cNama clan harus {min_name}-{max_name} karakter."
+name-invalid: "&cNama clan hanya boleh berisi huruf, angka, dan garis bawah."
+name-blocked: "&cNama clan itu tidak diperbolehkan."
+name-taken: "&cNama itu sudah dipakai clan lain."
+tag-length: "&cTag clan harus {min_tag}-{max_tag} karakter."
+tag-invalid: "&cTag clan hanya boleh berisi huruf dan angka."
+tag-taken: "&cTag itu sudah dipakai clan lain."
+create-success: "&aClan &f{clan} &aberhasil dibuat! Ketik &f/clan &auntuk membuka menu."
+
+disband-confirm: "&eKetik &f/clan disband confirm &euntuk membubarkan clan kamu secara permanen."
+disbanded: "&cClan &f{clan} &cdibubarkan oleh &f{player}&c."
+admin-disbanded: "&aClan &f{clan} &aberhasil dibubarkan."
+
+invite-sent: "&aUndangan dikirim ke &f{player}&a."
+invite-received: "&aKamu diundang ke clan &f{clan} &aoleh &f{player}&a. Ketik &f/clan accept {clan} &auntuk bergabung (berlaku {invite_expire} detik)."
+invite-self: "&cKamu tidak bisa mengundang dirimu sendiri."
+invite-already: "&cPemain itu sudah punya undangan yang masih berlaku."
+target-in-clan: "&cPemain itu sudah berada di dalam sebuah clan."
+target-banned: "&cPemain itu diblokir dari clan kamu."
+clan-full: "&cClan sudah penuh (maksimal {max_members} anggota)."
+invite-none: "&cKamu tidak punya undangan clan."
+invite-choose: "&eKamu punya beberapa undangan: &f{clans}&e. Tentukan dengan &f/clan accept <clan>&e."
+no-invite: "&cKamu tidak punya undangan dari clan &f{clan}&c."
+invite-denied: "&7Undangan dari clan &f{clan} &7ditolak."
+
+join-success: "&aKamu bergabung ke clan &f{clan}&a!"
+join-broadcast: "&f{player} &abergabung ke clan."
+join-closed: "&cClan ini tertutup. Kamu butuh undangan."
+banned-from-clan: "&cKamu diblokir dari clan ini."
+leave-success: "&7Kamu keluar dari clan &f{clan}&7."
+leave-broadcast: "&f{player} &ckeluar dari clan."
+owner-cannot-leave: "&cPemilik tidak bisa keluar. Pindahkan kepemilikan dengan &f/clan transfer &catau bubarkan clan."
+
+kick-success: "&f{player} &adikeluarkan dari clan."
+kicked: "&cKamu dikeluarkan dari clan &f{clan} &coleh &f{player}&c."
+kick-broadcast: "&f{player} &cdikeluarkan oleh &f{by}&c."
+role-changed: "&f{player} &7kini berpangkat {role}&7."
+promote-max: "&cPemain itu sudah berpangkat tertinggi yang bisa diberikan."
+demote-min: "&cPemain itu tidak bisa diturunkan lagi."
+transfer-broadcast: "&6{player} &7kini menjadi pemilik clan."
+ban-success: "&f{player} &adiblokir dari clan."
+unban-success: "&f{player} &atidak lagi diblokir."
+not-banned: "&cPemain itu tidak sedang diblokir."
+
+sethome-success: "&aHome clan berhasil diatur di lokasimu."
+home-none: "&cClan kamu belum memiliki home."
+home-world-missing: "&cDunia home clan tidak ditemukan."
+home-warmup: "&eTeleport dalam {seconds} detik... jangan bergerak!"
+home-cancelled: "&cTeleport dibatalkan karena kamu bergerak."
+home-teleported: "&aKamu diteleport ke home clan."
+
+rename-success: "&aNama clan diubah menjadi &f{clan}&a."
+tag-success: "&aTag clan diubah menjadi &f{tag}&a."
+desc-success: "&aDeskripsi clan diperbarui."
+desc-too-long: "&cDeskripsi maksimal {max_desc} karakter."
+color-success: "&aWarna clan diubah."
+color-invalid: "&cWarna tidak valid. Pakai kode (0-9, a-f) atau nama warna."
+open-set: "&7Status clan sekarang: {state}"
+ff-set: "&7Friendly fire sekarang: {state}"
+chat-on: "&aChat clan &2aktif&a. Pesanmu hanya terlihat oleh anggota clan."
+chat-off: "&7Chat clan dimatikan."
+ff-blocked: "&cKamu tidak bisa menyerang sesama anggota clan."
+score-gain: "&a+{points} skor untuk clan kamu."
+reload-success: "&aKonfigurasi VortyClan dimuat ulang."
+
+prompt:
+  create: "&eKetik nama clan (dan tag opsional) di chat. Contoh: &fNaga NGA"
+  invite: "&eKetik nama pemain yang ingin diundang."
+  rename: "&eKetik nama baru clan."
+  tag: "&eKetik tag baru clan."
+  desc: "&eKetik deskripsi baru clan (ketik - untuk menghapus)."
+  cancel-hint: "&7Ketik &fcancel &7untuk membatalkan."
+  cancelled: "&7Dibatalkan."
+
+role:
+  member: "&7Anggota"
+  admin: "&eAdmin"
+  owner: "&6Pemilik"
+state:
+  on: "&aAktif"
+  off: "&cMati"
+status:
+  open: "&aTerbuka"
+  closed: "&cTertutup"
+
+info:
+  - "&8&m          &r {color}&l{clan} &8[{color}{tag}&8] &8&m          "
+  - "&7Pemilik: &f{owner}"
+  - "&7Anggota: &f{members}&7/&f{max} &8(&a{online} online&8)"
+  - "&7Skor: &e{score} &8(peringkat #{rank})"
+  - "&7Status: {status} &8| &7Friendly fire: {ff}"
+  - "&7Dibuat: &f{created}"
+  - "&7Deskripsi: &f{desc}"
+
+list-header: "&8&m      &r &b&lTop Clan &7(Halaman {page}/{pages}) &8&m      "
+list-entry: "&7#{rank} {color}{clan} &8[{color}{tag}&8] &7- &f{members} anggota &7- &e{score} skor &7- {status}"
+list-empty: "&7Belum ada clan."
+
+help:
+  - "&8&m        &r &b&lVortyClan &7- Bantuan &8&m        "
+  - "&f/clan &7- buka menu GUI"
+  - "&f/clan create <nama> [tag] &7- buat clan"
+  - "&f/clan info [clan] &7- info clan"
+  - "&f/clan list [halaman] &7- daftar & peringkat clan"
+  - "&f/clan invite <pemain> &7- undang pemain"
+  - "&f/clan accept|deny [clan] &7- terima/tolak undangan"
+  - "&f/clan join <clan> &7- gabung ke clan terbuka"
+  - "&f/clan leave &7- keluar dari clan"
+  - "&f/clan kick|ban|unban <pemain> &7- kelola anggota"
+  - "&f/clan promote|demote|transfer <pemain> &7- ubah pangkat"
+  - "&f/clan home &7| &f/clan sethome &7- home clan"
+  - "&f/clan open|close &7- buka/tutup pendaftaran"
+  - "&f/clan pvp &7- friendly fire on/off"
+  - "&f/clan chat [pesan] &7- chat clan"
+  - "&f/clan rename|tag|desc|color &7- ubah tampilan clan"
+  - "&f/clan disband &7- bubarkan clan"
+
+gui:
+  back: "&c« Kembali"
+  prev: "&e« Halaman sebelumnya"
+  next: "&eHalaman berikutnya »"
+  main:
+    title: "&8VortyClan &7• Menu"
+    info-name: "{color}{clan} &8[{color}{tag}&8]"
+    info-lore:
+      - "&7Pemilik: &f{owner}"
+      - "&7Anggota: &f{members}&7/&f{max} &8(&a{online} online&8)"
+      - "&7Skor: &e{score} &8(#{rank})"
+      - "&7Status: {status}"
+      - "&7Friendly fire: {ff}"
+      - ""
+      - "&7{desc}"
+    members-name: "&bAnggota"
+    members-lore:
+      - "&7Lihat dan kelola anggota clan."
+      - ""
+      - "&eKlik untuk membuka"
+    home-name: "&aHome Clan"
+    home-lore:
+      - "&7Teleport ke home clan."
+      - ""
+      - "&eKlik untuk teleport"
+    top-name: "&6Top Clan"
+    top-lore:
+      - "&7Peringkat clan berdasarkan skor."
+      - ""
+      - "&eKlik untuk melihat"
+    invite-name: "&aUndang Pemain"
+    invite-lore:
+      - "&7Undang pemain ke clan kamu."
+      - ""
+      - "&eKlik lalu ketik nama pemain"
+    settings-name: "&dPengaturan Clan"
+    settings-lore:
+      - "&7Atur status, friendly fire, home,"
+      - "&7deskripsi, nama, tag, dan warna."
+      - ""
+      - "&eKlik untuk membuka"
+    chat-name: "&9Chat Clan: {state}"
+    chat-lore:
+      - "&7Saat aktif, semua pesanmu hanya"
+      - "&7terlihat oleh anggota clan."
+      - ""
+      - "&eKlik untuk mengganti"
+    leave-name: "&cKeluar dari Clan"
+    leave-lore:
+      - "&7Tinggalkan clan kamu."
+    leave-confirm: "&eYakin ingin keluar dari clan?"
+    disband-name: "&4Bubarkan Clan"
+    disband-lore:
+      - "&7Hapus clan secara permanen."
+    disband-confirm: "&cYakin ingin membubarkan clan? Ini permanen!"
+    create-name: "&aBuat Clan"
+    create-lore:
+      - "&7Kamu belum punya clan."
+      - ""
+      - "&eKlik lalu ketik nama clan di chat"
+    invites-name: "&eUndangan &7({count})"
+    invites-lore:
+      - "&7Lihat undangan clan untukmu."
+      - ""
+      - "&eKlik untuk membuka"
+    top-browse-name: "&6Telusuri Clan"
+    top-browse-lore:
+      - "&7Lihat clan lain dan gabung bila terbuka."
+      - ""
+      - "&eKlik untuk membuka"
+  members:
+    title: "&8VortyClan &7• Anggota"
+    entry-name: "&f{player}"
+    entry-lore:
+      - "&7Pangkat: {role}"
+      - "&7Status: {state}"
+    online: "&aOnline"
+    offline: "&7Offline"
+    manage-hint: "&eKlik untuk mengelola"
+  member:
+    title: "&8Kelola &7{player}"
+    promote-name: "&aNaikkan Pangkat"
+    promote-lore:
+      - "&7Jadikan admin."
+    demote-name: "&6Turunkan Pangkat"
+    demote-lore:
+      - "&7Jadikan anggota biasa."
+    kick-name: "&cKeluarkan"
+    kick-lore:
+      - "&7Keluarkan dari clan."
+    kick-confirm: "&eKeluarkan {player} dari clan?"
+    ban-name: "&4Blokir"
+    ban-lore:
+      - "&7Keluarkan dan larang bergabung lagi."
+    ban-confirm: "&eBlokir {player} dari clan?"
+    transfer-name: "&6Pindahkan Kepemilikan"
+    transfer-lore:
+      - "&7Jadikan pemain ini pemilik clan."
+      - "&7Kamu akan menjadi admin."
+    transfer-confirm: "&cPindahkan kepemilikan ke {player}?"
+  settings:
+    title: "&8VortyClan &7• Pengaturan"
+    open-name: "&eStatus Pendaftaran: {state}"
+    open-lore:
+      - "&7Clan terbuka bisa dimasuki siapa saja."
+      - ""
+      - "&eKlik untuk mengganti"
+    ff-name: "&cFriendly Fire: {state}"
+    ff-lore:
+      - "&7Izinkan anggota saling menyerang."
+      - ""
+      - "&eKlik untuk mengganti"
+    home-name: "&aAtur Home"
+    home-lore:
+      - "&7Jadikan lokasimu sekarang sebagai home."
+      - ""
+      - "&eKlik untuk mengatur"
+    desc-name: "&bUbah Deskripsi"
+    desc-lore:
+      - "&7Klik lalu ketik deskripsi baru."
+    rename-name: "&dUbah Nama"
+    rename-lore:
+      - "&7Khusus pemilik. Klik lalu ketik nama baru."
+    tag-name: "&dUbah Tag"
+    tag-lore:
+      - "&7Khusus pemilik. Klik lalu ketik tag baru."
+    color-name: "&dUbah Warna"
+    color-lore:
+      - "&7Khusus pemilik. Pilih warna clan."
+  color:
+    title: "&8VortyClan &7• Warna"
+    names: [Hitam, Biru Tua, Hijau Tua, Aqua Tua, Merah Tua, Ungu, Emas, Abu Terang, Abu Gelap, Biru, Hijau, Aqua, Merah, Pink, Kuning, Putih]
+    pick: "&eKlik untuk memilih"
+  top:
+    title: "&8VortyClan &7• Top Clan"
+    entry-name: "&e#{rank} {color}{clan} &8[{color}{tag}&8]"
+    entry-lore:
+      - "&7Pemilik: &f{owner}"
+      - "&7Anggota: &f{members}&7/&f{max}"
+      - "&7Skor: &e{score}"
+      - "&7Status: {status}"
+      - "&7{desc}"
+    join-hint: "&aKlik untuk bergabung"
+  invites:
+    title: "&8VortyClan &7• Undangan"
+    entry-name: "{color}{clan} &8[{color}{tag}&8]"
+    entry-lore:
+      - "&7Pemilik: &f{owner}"
+      - "&7Anggota: &f{members}&7/&f{max}"
+      - ""
+      - "&aKlik kiri: terima"
+      - "&cKlik kanan: tolak"
+  confirm:
+    title: "&8Konfirmasi"
+    yes: "&aYa, lanjutkan"
+    yes-lore:
+      - "&7Klik untuk mengonfirmasi."
+    no: "&cBatal"
+    no-lore:
+      - "&7Klik untuk membatalkan."
